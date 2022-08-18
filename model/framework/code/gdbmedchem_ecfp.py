@@ -6,7 +6,7 @@ import sys
 # Input Parameters
 
 input_file = open(sys.argv[1], 'r')
-Lines = input_file.readlines()
+Lines = input_file.readlines()[1:]
 fp     = 'ECfp4'
 db     = 'GDBMedChem'
 nnc    = '100'
