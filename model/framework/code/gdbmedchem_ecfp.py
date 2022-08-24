@@ -4,14 +4,11 @@ import json
 import sys
 
 # Input Parameters
-
 input_file = open(sys.argv[1], 'r')
 Lines = input_file.readlines()[1:]
 fp     = 'ECfp4'
 db     = 'GDBMedChem'
 nnc    = '100'
-
-
 
 data = []
 for input_smiles in Lines:
@@ -29,8 +26,7 @@ for input_smiles in Lines:
         x1 = x[1].split("IDX")
         x2 = x1[0]
         smiles_list.append(x2.strip(' ')) 
-        similarity_indices.append(x[3].strip('\"'))
-        
+        similarity_indices.append(x[3].strip('\"'))    
     data+= [[smiles_list, similarity_indices]]
     
 with open(sys.argv[2], 'w') as f:
