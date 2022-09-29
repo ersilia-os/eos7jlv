@@ -89,10 +89,10 @@ class Model(object):
             h = next(reader)
             R = []
             for r in reader:
-                R += [{"similarity": [String(x) for x in r]}]
+                R += [[String(x) for x in r]]
         result = {
             "result": R,
-            "meta": {"similarity": h}
+            "meta": h
         }
         shutil.rmtree(tmp_folder)
         return result
