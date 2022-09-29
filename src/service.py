@@ -92,7 +92,7 @@ class Model(object):
                 R += [{"similarity": [String(x) for x in r]}]
         result = {
             "result": R,
-            "meta": None
+            "meta": {"similarity": h}
         }
         shutil.rmtree(tmp_folder)
         return result
