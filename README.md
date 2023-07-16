@@ -23,6 +23,11 @@ The model looks for 100 nearest neighbors of a given molecule, according to ECFP
 * [Source Code](https://gdb-medchem-simsearch.gdb.tools/)
 * Ersilia contributor: [Amna-28](https://github.com/Amna-28)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos7jlv)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7jlv.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos7jlv) (AMD64, ARM64)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.201900031) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
