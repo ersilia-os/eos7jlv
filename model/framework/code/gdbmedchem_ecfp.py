@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 import sys
+import urllib
 
 # Input Parameters
 input_file = open(sys.argv[1], 'r')
@@ -13,7 +14,8 @@ nnc    = '100'
 data = []
 for input_smiles in Lines:
     input_smiles = input_smiles.strip() 
-    url = 'https://gdb-medchem-simsearch.gdb.tools/search?smi=' + input_smiles +  '&fp=' + fp + '&db=' + db + '&nnc=' + nnc
+    url_encoded_smiles = urllib.parse.quote(input_smiles)
+    url = 'https://gdb-medchem-simsearch.gdb.tools/search?smi=' + url_encoded_smiles +  '&fp=' + fp + '&db=' + db + '&nnc=' + nnc
     r = requests.get(url)
     soup = BeautifulSoup(r.text, features = 'html.parser')
     results = soup.find_all('script')
