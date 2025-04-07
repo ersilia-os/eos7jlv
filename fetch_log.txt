@@ -1,0 +1,554 @@
+16:37:14 | DEBUG    | Repo path specified: /home/gentroyal/eos7jlv
+16:37:14 | DEBUG    | Absolute path: /home/gentroyal/eos7jlv
+⬇️  Fetching model eos7jlv: gdbmedchem-similarity
+16:37:15 | DEBUG    | Initialized with URL: None
+16:37:15 | DEBUG    | Getting model source
+16:37:15 | DEBUG    | Model getting fetched from Local Repository
+16:37:15 | INFO     | Model doesn't exist on your system, fetching it now.
+16:37:15 | DEBUG    | Starting fetching procedure
+16:37:15 | DEBUG    | Fetching in your system, not from DockerHub
+16:37:15 | DEBUG    | Deciding fetcher (BentoML or FastAPI)
+16:37:15 | DEBUG    | Fetching using Ersilia Pack (FastAPI)
+16:37:15 | DEBUG    | Fetching from FastAPI...
+16:37:16 | DEBUG    | GitHub CLI is installed
+16:37:16 | DEBUG    | Checking Git LFS
+16:37:16 | DEBUG    | Git LFS is installed
+16:37:16 | DEBUG    | Git LFS has been activated
+16:37:17 | DEBUG    | Connected to the internet
+16:37:17 | DEBUG    | Conda is installed
+16:37:17 | DEBUG    | EOS Home path exists
+16:37:17 | INFO     | Starting delete of model eos7jlv
+16:37:17 | INFO     | Removing EOS folder /home/gentroyal/eos/dest/eos7jlv
+16:37:17 | INFO     | Removing bento folder first /home/gentroyal/bentoml/repository/eos7jlv/20250405063816_766FF8
+16:37:17 | INFO     | Removing bundle folder /home/gentroyal/eos/repository/eos7jlv
+16:37:17 | DEBUG    | Folder removed
+16:37:17 | DEBUG    | Attempting Bento delete
+16:37:17 | DEBUG    | Looking for BentoML catalog
+16:37:24 | DEBUG    | No BentoML Catalog available
+16:37:24 | INFO     | Deleting conda environment eos7jlv
+16:37:39 | DEBUG    | Attempting temporary folder delete
+16:37:39 | DEBUG    | Attempting lake delete (local)
+16:37:39 | DEBUG    | Deleting /home/gentroyal/eos/isaura/lake/eos7jlv_local.h5
+16:37:39 | DEBUG    | Attempting lake delete (public)
+16:37:39 | DEBUG    | Deleting /home/gentroyal/eos/isaura/lake/eos7jlv_public.h5
+16:37:39 | INFO     | Removing docker images and stopping containers related to eos7jlv
+16:37:40 | DEBUG    | Running docker images > /tmp/ersilia-x8li4eit/docker-images.txt
+16:37:40 | DEBUG    | Model entry eos7jlv was not available in the fetched models registry
+16:37:40 | SUCCESS  | Model eos7jlv deleted successfully
+16:37:40 | DEBUG    | Getting repository
+16:37:40 | DEBUG    | Preparing inner template if necessary
+16:37:40 | DEBUG    | The pack.py file already exists
+16:37:40 | DEBUG    | The Dockerfile file already exists
+16:37:40 | DEBUG    | The src folder already exists
+16:37:40 | DEBUG    | Changing python version if necessary
+16:37:40 | DEBUG    | {'version': '0.11.0', 'slim': False, 'python': 'py310'}
+16:37:40 | DEBUG    | User is not root
+16:37:40 | DEBUG    | Copying example file if available
+16:37:40 | DEBUG    | Example file exists
+16:37:40 | DEBUG    | Done getting model
+16:37:40 | DEBUG    | Check if model can be run with vanilla (system) code. This is a default option when inside a docker container.
+16:37:40 | DEBUG    | Initializing conda packer
+16:37:40 | DEBUG    | Packing model with Conda
+16:37:40 | DEBUG    | Setting up
+16:37:40 | DEBUG    | Reading python version from Dockerfile
+16:37:40 | DEBUG    | Conda environment eos7jlv
+16:37:41 | DEBUG    | Environment eos7jlv does not exist
+16:37:54 | DEBUG    | Creating base conda environment
+16:37:54 | DEBUG    | Run commandlines on eos7jlv
+16:37:54 | DEBUG    | python -m pip install git+https://github.com/ersilia-os/ersilia-pack.git
+16:37:57 | DEBUG    | Activating base environment
+16:37:57 | DEBUG    | Current working directory: /home/gentroyal/eos7jlv
+16:37:57 | DEBUG    | Running bash /tmp/ersilia-7y7s1a_z/script.sh 2>&1 | tee -a /tmp/ersilia-7cv4p1t7/command_outputs.log
+Updated Git hooks.
+Git LFS initialized.
+Remove all packages in environment /home/gentroyal/anaconda3/envs/eos7jlv:
+
+
+## Package Plan ##
+
+  environment location: /home/gentroyal/anaconda3/envs/eos7jlv
+
+
+The following packages will be REMOVED:
+
+  _libgcc_mutex-0.1-main
+  _openmp_mutex-5.1-1_gnu
+  ca-certificates-2025.2.25-h06a4308_0
+  certifi-2022.12.7-py37h06a4308_0
+  ld_impl_linux-64-2.40-h12ee557_0
+  libffi-3.4.4-h6a678d5_1
+  libgcc-ng-11.2.0-h1234567_1
+  libgomp-11.2.0-h1234567_1
+  libstdcxx-ng-11.2.0-h1234567_1
+  ncurses-6.4-h6a678d5_0
+  openssl-1.1.1w-h7f8727e_0
+  pip-22.3.1-py37h06a4308_0
+  python-3.7.16-h7a1cb2a_0
+  readline-8.2-h5eee18b_0
+  setuptools-65.6.3-py37h06a4308_0
+  sqlite-3.45.3-h5eee18b_0
+  tk-8.6.14-h39e8969_0
+  wheel-0.38.4-py37h06a4308_0
+  xz-5.6.4-h5eee18b_1
+  zlib-1.2.13-h5eee18b_1
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: - done
+Verifying transaction: | / - \ | / - \ | / done
+Executing transaction: \ | / - \ | / - \ | / - done
+Deleted build cache objects:
+m34kr8utze2yj38f6s3y8qjwg
+8znpmpdh6a25jxbhb26hjytz0
+zd0sjhwnxcbhgkagebv5tunw3
+
+Total reclaimed space: 364B
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/gentroyal/anaconda3/envs/eos7jlv
+
+  added / updated specs:
+    - python=3.10
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu 
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2025.2.25-h06a4308_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.40-h12ee557_0 
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_1 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1 
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1 
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0 
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0 
+  openssl            pkgs/main/linux-64::openssl-3.0.16-h5eee18b_0 
+  pip                pkgs/main/linux-64::pip-25.0-py310h06a4308_0 
+  python             pkgs/main/linux-64::python-3.10.16-he870216_1 
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0 
+  setuptools         pkgs/main/linux-64::setuptools-75.8.0-py310h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.45.3-h5eee18b_0 
+  tk                 pkgs/main/linux-64::tk-8.6.14-h39e8969_0 
+  tzdata             pkgs/main/noarch::tzdata-2025a-h04d1e81_0 
+  wheel              pkgs/main/linux-64::wheel-0.45.1-py310h06a4308_0 
+  xz                 pkgs/main/linux-64::xz-5.6.4-h5eee18b_1 
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_1 
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: - \ | / - \ | / done
+Verifying transaction: \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+Executing transaction: \ | / - \ | / - \ | / - \ | / done
+#
+# To activate this environment, use
+#
+#     $ conda activate eos7jlv
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+Collecting git+https://github.com/ersilia-os/ersilia-pack.git
+  Cloning https://github.com/ersilia-os/ersilia-pack.git to /tmp/pip-req-build-q0meymiv
+  Running command git clone --filter=blob:none --quiet https://github.com/ersilia-os/ersilia-pack.git /tmp/pip-req-build-q0meymiv
+  Resolved https://github.com/ersilia-os/ersilia-pack.git to commit 259ec98625d85b6a56ecf31d5524cf7d471b7bde
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting fastapi (from ersilia-pack==1.0.0)
+  Using cached fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+Collecting PyYAML (from ersilia-pack==1.0.0)
+  Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting uvicorn[standard] (from ersilia-pack==1.0.0)
+  Using cached uvicorn-0.34.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting slowapi (from ersilia-pack==1.0.0)
+  Using cached slowapi-0.1.9-py3-none-any.whl.metadata (3.0 kB)
+Collecting prometheus-fastapi-instrumentator (from ersilia-pack==1.0.0)
+  Using cached prometheus_fastapi_instrumentator-7.1.0-py3-none-any.whl.metadata (13 kB)
+Collecting pybreaker (from ersilia-pack==1.0.0)
+  Using cached pybreaker-1.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting redis (from ersilia-pack==1.0.0)
+  Using cached redis-5.2.1-py3-none-any.whl.metadata (9.1 kB)
+Collecting psutil (from ersilia-pack==1.0.0)
+  Using cached psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+Collecting orjson (from ersilia-pack==1.0.0)
+  Downloading orjson-3.10.16-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (41 kB)
+Collecting starlette<0.47.0,>=0.40.0 (from fastapi->ersilia-pack==1.0.0)
+  Using cached starlette-0.46.1-py3-none-any.whl.metadata (6.2 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi->ersilia-pack==1.0.0)
+  Downloading pydantic-2.11.2-py3-none-any.whl.metadata (64 kB)
+Collecting typing-extensions>=4.8.0 (from fastapi->ersilia-pack==1.0.0)
+  Using cached typing_extensions-4.13.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting prometheus-client<1.0.0,>=0.8.0 (from prometheus-fastapi-instrumentator->ersilia-pack==1.0.0)
+  Using cached prometheus_client-0.21.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting async-timeout>=4.0.3 (from redis->ersilia-pack==1.0.0)
+  Using cached async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting limits>=2.3 (from slowapi->ersilia-pack==1.0.0)
+  Downloading limits-4.6-py3-none-any.whl.metadata (11 kB)
+Collecting click>=7.0 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting h11>=0.8 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting httptools>=0.6.3 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached httptools-0.6.4-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.6 kB)
+Collecting python-dotenv>=0.13 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached python_dotenv-1.1.0-py3-none-any.whl.metadata (24 kB)
+Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached uvloop-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting watchfiles>=0.13 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached watchfiles-1.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting websockets>=10.4 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached websockets-15.0.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting deprecated>=1.2 (from limits>=2.3->slowapi->ersilia-pack==1.0.0)
+  Using cached Deprecated-1.2.18-py2.py3-none-any.whl.metadata (5.7 kB)
+Collecting packaging<25,>=21 (from limits>=2.3->slowapi->ersilia-pack==1.0.0)
+  Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->ersilia-pack==1.0.0)
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.33.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->ersilia-pack==1.0.0)
+  Downloading pydantic_core-2.33.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->ersilia-pack==1.0.0)
+  Using cached typing_inspection-0.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting anyio<5,>=3.6.2 (from starlette<0.47.0,>=0.40.0->fastapi->ersilia-pack==1.0.0)
+  Using cached anyio-4.9.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting exceptiongroup>=1.0.2 (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->ersilia-pack==1.0.0)
+  Using cached exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+Collecting idna>=2.8 (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->ersilia-pack==1.0.0)
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting sniffio>=1.1 (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->ersilia-pack==1.0.0)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting wrapt<2,>=1.10 (from deprecated>=1.2->limits>=2.3->slowapi->ersilia-pack==1.0.0)
+  Using cached wrapt-1.17.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.4 kB)
+Using cached fastapi-0.115.12-py3-none-any.whl (95 kB)
+Downloading orjson-3.10.16-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (132 kB)
+Using cached prometheus_fastapi_instrumentator-7.1.0-py3-none-any.whl (19 kB)
+Using cached psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (277 kB)
+Using cached pybreaker-1.3.0-py3-none-any.whl (12 kB)
+Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (751 kB)
+Using cached redis-5.2.1-py3-none-any.whl (261 kB)
+Using cached slowapi-0.1.9-py3-none-any.whl (14 kB)
+Using cached async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Using cached click-8.1.8-py3-none-any.whl (98 kB)
+Using cached h11-0.14.0-py3-none-any.whl (58 kB)
+Using cached httptools-0.6.4-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (442 kB)
+Downloading limits-4.6-py3-none-any.whl (61 kB)
+Using cached prometheus_client-0.21.1-py3-none-any.whl (54 kB)
+Downloading pydantic-2.11.2-py3-none-any.whl (443 kB)
+Downloading pydantic_core-2.33.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 859.4 kB/s eta 0:00:00
+Using cached python_dotenv-1.1.0-py3-none-any.whl (20 kB)
+Using cached starlette-0.46.1-py3-none-any.whl (71 kB)
+Using cached typing_extensions-4.13.1-py3-none-any.whl (45 kB)
+Using cached uvloop-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.8 MB)
+Using cached watchfiles-1.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (452 kB)
+Using cached websockets-15.0.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (181 kB)
+Using cached uvicorn-0.34.0-py3-none-any.whl (62 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached anyio-4.9.0-py3-none-any.whl (100 kB)
+Using cached Deprecated-1.2.18-py2.py3-none-any.whl (10.0 kB)
+Using cached packaging-24.2-py3-none-any.whl (65 kB)
+Using cached typing_inspection-0.4.0-py3-none-any.whl (14 kB)
+Using cached exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached wrapt-1.17.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (82 kB)
+Building wheels for collected packages: ersilia-pack
+  Building wheel for ersilia-pack (pyproject.toml): started
+  Building wheel for ersilia-pack (pyproject.toml): finished with status 'done'
+  Created wheel for ersilia-pack: filename=ersilia_pack-1.0.0-py3-none-any.whl size=42523 sha256=f0dc9c7273f0a7c9debfffc1e9cd0037c25ddfe2e938237ef2a18e82ec84b63a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_6_y0h32/wheels/8e/4d/24/5264c91fc1423345485ad780c3319e547cde740d7d4c0c84f4
+Successfully built ersilia-pack
+Installing collected packages: wrapt, websockets, uvloop, typing-extensions, sniffio, PyYAML, python-dotenv, pybreaker, psutil, prometheus-client, packaging, orjson, idna, httptools, h11, exceptiongroup, click, async-timeout, annotated-types, uvicorn, typing-inspection, redis, pydantic-core, deprecated, anyio, watchfiles, starlette, pydantic, limits, slowapi, prometheus-fastapi-instrumentator, fastapi, ersilia-pack
+Successfully installed PyYAML-6.0.2 annotated-types-0.7.0 anyio-4.9.0 async-timeout-5.0.1 click-8.1.8 deprecated-1.2.18 ersilia-pack-1.0.0 exceptiongroup-1.2.2 fastapi-0.115.12 h11-0.14.0 httptools-0.6.4 idna-3.10 limits-4.6 orjson-3.10.16 packaging-24.2 prometheus-client-0.21.1 prometheus-fastapi-instrumentator-7.1.0 psutil-7.0.0 pybreaker-1.3.0 pydantic-2.11.2 pydantic-core-2.33.1 python-dotenv-1.1.0 redis-5.2.1 slowapi-0.1.9 sniffio-1.3.1 starlette-0.46.1 typing-extensions-4.13.1 typing-inspection-0.4.0 uvicorn-0.34.0 uvloop-0.21.0 watchfiles-1.0.4 websockets-15.0.1 wrapt-1.17.216:38:35 | DEBUG    | Collecting git+https://github.com/ersilia-os/ersilia-pack.git
+  Cloning https://github.com/ersilia-os/ersilia-pack.git to /tmp/pip-req-build-q0meymiv
+  Running command git clone --filter=blob:none --quiet https://github.com/ersilia-os/ersilia-pack.git /tmp/pip-req-build-q0meymiv
+  Resolved https://github.com/ersilia-os/ersilia-pack.git to commit 259ec98625d85b6a56ecf31d5524cf7d471b7bde
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting fastapi (from ersilia-pack==1.0.0)
+  Using cached fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+Collecting PyYAML (from ersilia-pack==1.0.0)
+  Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Collecting uvicorn[standard] (from ersilia-pack==1.0.0)
+  Using cached uvicorn-0.34.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting slowapi (from ersilia-pack==1.0.0)
+  Using cached slowapi-0.1.9-py3-none-any.whl.metadata (3.0 kB)
+Collecting prometheus-fastapi-instrumentator (from ersilia-pack==1.0.0)
+  Using cached prometheus_fastapi_instrumentator-7.1.0-py3-none-any.whl.metadata (13 kB)
+Collecting pybreaker (from ersilia-pack==1.0.0)
+  Using cached pybreaker-1.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting redis (from ersilia-pack==1.0.0)
+  Using cached redis-5.2.1-py3-none-any.whl.metadata (9.1 kB)
+Collecting psutil (from ersilia-pack==1.0.0)
+  Using cached psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+Collecting orjson (from ersilia-pack==1.0.0)
+  Downloading orjson-3.10.16-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (41 kB)
+Collecting starlette<0.47.0,>=0.40.0 (from fastapi->ersilia-pack==1.0.0)
+  Using cached starlette-0.46.1-py3-none-any.whl.metadata (6.2 kB)
+Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi->ersilia-pack==1.0.0)
+  Downloading pydantic-2.11.2-py3-none-any.whl.metadata (64 kB)
+Collecting typing-extensions>=4.8.0 (from fastapi->ersilia-pack==1.0.0)
+  Using cached typing_extensions-4.13.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting prometheus-client<1.0.0,>=0.8.0 (from prometheus-fastapi-instrumentator->ersilia-pack==1.0.0)
+  Using cached prometheus_client-0.21.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting async-timeout>=4.0.3 (from redis->ersilia-pack==1.0.0)
+  Using cached async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting limits>=2.3 (from slowapi->ersilia-pack==1.0.0)
+  Downloading limits-4.6-py3-none-any.whl.metadata (11 kB)
+Collecting click>=7.0 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting h11>=0.8 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached h11-0.14.0-py3-none-any.whl.metadata (8.2 kB)
+Collecting httptools>=0.6.3 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached httptools-0.6.4-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.6 kB)
+Collecting python-dotenv>=0.13 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached python_dotenv-1.1.0-py3-none-any.whl.metadata (24 kB)
+Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached uvloop-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting watchfiles>=0.13 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached watchfiles-1.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting websockets>=10.4 (from uvicorn[standard]->ersilia-pack==1.0.0)
+  Using cached websockets-15.0.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting deprecated>=1.2 (from limits>=2.3->slowapi->ersilia-pack==1.0.0)
+  Using cached Deprecated-1.2.18-py2.py3-none-any.whl.metadata (5.7 kB)
+Collecting packaging<25,>=21 (from limits>=2.3->slowapi->ersilia-pack==1.0.0)
+  Using cached packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->ersilia-pack==1.0.0)
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.33.1 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->ersilia-pack==1.0.0)
+  Downloading pydantic_core-2.33.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting typing-inspection>=0.4.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi->ersilia-pack==1.0.0)
+  Using cached typing_inspection-0.4.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting anyio<5,>=3.6.2 (from starlette<0.47.0,>=0.40.0->fastapi->ersilia-pack==1.0.0)
+  Using cached anyio-4.9.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting exceptiongroup>=1.0.2 (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->ersilia-pack==1.0.0)
+  Using cached exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+Collecting idna>=2.8 (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->ersilia-pack==1.0.0)
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting sniffio>=1.1 (from anyio<5,>=3.6.2->starlette<0.47.0,>=0.40.0->fastapi->ersilia-pack==1.0.0)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting wrapt<2,>=1.10 (from deprecated>=1.2->limits>=2.3->slowapi->ersilia-pack==1.0.0)
+  Using cached wrapt-1.17.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.4 kB)
+Using cached fastapi-0.115.12-py3-none-any.whl (95 kB)
+Downloading orjson-3.10.16-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (132 kB)
+Using cached prometheus_fastapi_instrumentator-7.1.0-py3-none-any.whl (19 kB)
+Using cached psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (277 kB)
+Using cached pybreaker-1.3.0-py3-none-any.whl (12 kB)
+Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (751 kB)
+Using cached redis-5.2.1-py3-none-any.whl (261 kB)
+Using cached slowapi-0.1.9-py3-none-any.whl (14 kB)
+Using cached async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Using cached click-8.1.8-py3-none-any.whl (98 kB)
+Using cached h11-0.14.0-py3-none-any.whl (58 kB)
+Using cached httptools-0.6.4-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (442 kB)
+Downloading limits-4.6-py3-none-any.whl (61 kB)
+Using cached prometheus_client-0.21.1-py3-none-any.whl (54 kB)
+Downloading pydantic-2.11.2-py3-none-any.whl (443 kB)
+Downloading pydantic_core-2.33.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 859.4 kB/s eta 0:00:00
+Using cached python_dotenv-1.1.0-py3-none-any.whl (20 kB)
+Using cached starlette-0.46.1-py3-none-any.whl (71 kB)
+Using cached typing_extensions-4.13.1-py3-none-any.whl (45 kB)
+Using cached uvloop-0.21.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.8 MB)
+Using cached watchfiles-1.0.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (452 kB)
+Using cached websockets-15.0.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (181 kB)
+Using cached uvicorn-0.34.0-py3-none-any.whl (62 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached anyio-4.9.0-py3-none-any.whl (100 kB)
+Using cached Deprecated-1.2.18-py2.py3-none-any.whl (10.0 kB)
+Using cached packaging-24.2-py3-none-any.whl (65 kB)
+Using cached typing_inspection-0.4.0-py3-none-any.whl (14 kB)
+Using cached exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached wrapt-1.17.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (82 kB)
+Building wheels for collected packages: ersilia-pack
+  Building wheel for ersilia-pack (pyproject.toml): started
+  Building wheel for ersilia-pack (pyproject.toml): finished with status 'done'
+  Created wheel for ersilia-pack: filename=ersilia_pack-1.0.0-py3-none-any.whl size=42523 sha256=f0dc9c7273f0a7c9debfffc1e9cd0037c25ddfe2e938237ef2a18e82ec84b63a
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_6_y0h32/wheels/8e/4d/24/5264c91fc1423345485ad780c3319e547cde740d7d4c0c84f4
+Successfully built ersilia-pack
+Installing collected packages: wrapt, websockets, uvloop, typing-extensions, sniffio, PyYAML, python-dotenv, pybreaker, psutil, prometheus-client, packaging, orjson, idna, httptools, h11, exceptiongroup, click, async-timeout, annotated-types, uvicorn, typing-inspection, redis, pydantic-core, deprecated, anyio, watchfiles, starlette, pydantic, limits, slowapi, prometheus-fastapi-instrumentator, fastapi, ersilia-pack
+Successfully installed PyYAML-6.0.2 annotated-types-0.7.0 anyio-4.9.0 async-timeout-5.0.1 click-8.1.8 deprecated-1.2.18 ersilia-pack-1.0.0 exceptiongroup-1.2.2 fastapi-0.115.12 h11-0.14.0 httptools-0.6.4 idna-3.10 limits-4.6 orjson-3.10.16 packaging-24.2 prometheus-client-0.21.1 prometheus-fastapi-instrumentator-7.1.0 psutil-7.0.0 pybreaker-1.3.0 pydantic-2.11.2 pydantic-core-2.33.1 python-dotenv-1.1.0 redis-5.2.1 slowapi-0.1.9 sniffio-1.3.1 starlette-0.46.1 typing-extensions-4.13.1 typing-inspection-0.4.0 uvicorn-0.34.0 uvloop-0.21.0 watchfiles-1.0.4 websockets-15.0.1 wrapt-1.17.2
+
+16:38:35 | DEBUG    | Activation done
+16:38:35 | DEBUG    | Storing Conda environment in the local environment database
+16:38:35 | DEBUG    | Done with the Conda setup
+16:38:36 | DEBUG    | Using environment eos7jlv
+16:38:36 | DEBUG    | Running command: ersilia_model_pack --repo_path /home/gentroyal/eos/dest/eos7jlv --bundles_repo_path /home/gentroyal/eos/repository --conda_env_name eos7jlv
+16:38:36 | DEBUG    | Run commandlines on eos7jlv
+16:38:36 | DEBUG    | ersilia_model_pack --repo_path /home/gentroyal/eos/dest/eos7jlv --bundles_repo_path /home/gentroyal/eos/repository --conda_env_name eos7jlv
+16:38:38 | DEBUG    | Activating base environment
+16:38:38 | DEBUG    | Current working directory: /home/gentroyal/eos7jlv
+16:38:38 | DEBUG    | Running bash /tmp/ersilia-rgc1yntq/script.sh 2>&1 | tee -a /tmp/ersilia-mv_cywgz/command_outputs.log
+16:38:55 | DEBUG    | Collecting requests==2.31.0
+  Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting charset-normalizer<4,>=2 (from requests==2.31.0)
+  Downloading charset_normalizer-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+Requirement already satisfied: idna<4,>=2.5 in /home/gentroyal/anaconda3/envs/eos7jlv/lib/python3.10/site-packages (from requests==2.31.0) (3.10)
+Collecting urllib3<3,>=1.21.1 (from requests==2.31.0)
+  Using cached urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests==2.31.0)
+  Using cached certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+Using cached certifi-2025.1.31-py3-none-any.whl (166 kB)
+Downloading charset_normalizer-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (146 kB)
+Using cached urllib3-2.3.0-py3-none-any.whl (128 kB)
+Installing collected packages: urllib3, charset-normalizer, certifi, requests
+Successfully installed certifi-2025.1.31 charset-normalizer-3.4.1 requests-2.31.0 urllib3-2.3.0
+Collecting beautifulsoup4==4.12.2
+  Downloading beautifulsoup4-4.12.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting soupsieve>1.2 (from beautifulsoup4==4.12.2)
+  Using cached soupsieve-2.6-py3-none-any.whl.metadata (4.6 kB)
+Downloading beautifulsoup4-4.12.2-py3-none-any.whl (142 kB)
+Using cached soupsieve-2.6-py3-none-any.whl (36 kB)
+Installing collected packages: soupsieve, beautifulsoup4
+Successfully installed beautifulsoup4-4.12.2 soupsieve-2.6
+run_output.csv
+Path existed
+
+16:38:55 | DEBUG    | Activation done
+16:38:55 | DEBUG    | Packing command successfully run inside eos7jlv conda environment
+16:38:55 | DEBUG    | Creating model symlink bundle > dest
+16:38:55 | DEBUG    | Creating symlink from /home/gentroyal/eos/repository/eos7jlv/20250407-d7cb555b-320f-4279-ab75-485964fd18a0/model
+16:38:55 | DEBUG    | Creating symlink to /home/gentroyal/eos/dest/eos7jlv/model
+16:38:55 | INFO     | Could not create symbolic link from /home/gentroyal/eos/dest/eos7jlv/data.h5 to /home/gentroyal/eos/isaura/lake/eos7jlv_public.h5
+16:38:55 | DEBUG    | Symlinks created
+16:38:55 | DEBUG    | Getting model card of eos7jlv
+16:38:55 | DEBUG    | Trying to get metadata from: /home/gentroyal/eos/dest/eos7jlv
+16:38:55 | DEBUG    | Card saved at /home/gentroyal/eos/dest/eos7jlv/card.json
+16:38:55 | DEBUG    | Saving slug gdbmedchem-similarity
+16:38:56 | DEBUG    | Checking that autoservice works
+16:38:56 | DEBUG    | Setting BentoML AutoService for eos7jlv
+16:38:56 | DEBUG    | No service class provided, deciding automatically
+16:38:56 | DEBUG    | No service class file exists in /home/gentroyal/eos/repository/eos7jlv/20250407-d7cb555b-320f-4279-ab75-485964fd18a0/service_class.txt
+16:38:56 | DEBUG    | Pack method is: fastapi
+16:38:56 | DEBUG    | Pack method is: fastapi
+16:38:56 | DEBUG    | Setting virtual environment at /home/gentroyal/eos/dest/eos7jlv
+16:38:56 | DEBUG    | Pack method is: fastapi
+16:38:57 | DEBUG    | Pack method is: fastapi
+16:38:57 | DEBUG    | Service class: conda
+16:38:57 | DEBUG    | Getting APIs from list file
+16:38:57 | DEBUG    | Getting APIs from FastAPI
+16:38:57 | DEBUG    | Sniffing model
+16:38:57 | DEBUG    | Getting model size
+16:38:57 | DEBUG    | Model size is 0.22649765014648438 MB
+16:38:57 | DEBUG    | Resolving API schema from columns file...
+16:38:57 | DEBUG    | API schema saved at /home/gentroyal/eos/dest/eos7jlv/api_schema.json
+16:38:57 | DEBUG    | Fetching eos7jlv done in time: 0:01:40.587138s
+16:38:57 | INFO     | Fetching eos7jlv done successfully: 0:01:40.587138
+16:38:57 | DEBUG    | Model already exists in your local, skipping fetching
+16:38:57 | DEBUG    | Running standard CSV example
+16:38:57 | DEBUG    | /home/gentroyal/eos/dest/eos7jlv/example_standard_input.csv
+16:38:57 | DEBUG    | /home/gentroyal/eos/dest/eos7jlv/example_standard_output.csv
+16:39:01 | DEBUG    | Usage: ersilia [OPTIONS] COMMAND [ARGS]...
+
+  🦠 Welcome to Ersilia! 💊
+
+Options:
+  --version      Show the version and exit.
+  -v, --verbose  Show logging on terminal when running commands.
+  -s, --silent   Do not echo any progress message.
+  --help         Show this message and exit.
+
+Commands:
+  auth       Log in to ersilia to enter contributor mode.
+  catalog    List a catalog of models
+  close      Close model
+  delete     Delete model from local computer
+  example    Generate input examples for the model of interest
+  fetch      Fetch model from Ersilia Model Hub
+  info       Get model information
+  run        Run a served model
+  serve      Serve model
+  test       Test a model
+  uninstall  Uninstall ersilia
+
+16:39:01 | DEBUG    | No need to use Conda!
+16:39:46 | INFO     | Run log: 16:39:16 | DEBUG    | Getting session from /home/gentroyal/eos/sessions/session_49065/session.json
+16:39:16 | DEBUG    | Getting session from /home/gentroyal/eos/sessions/session_49065/session.json
+16:39:16 | DEBUG    | Getting session from /home/gentroyal/eos/sessions/session_49065/session.json
+16:39:16 | DEBUG    | Getting session from /home/gentroyal/eos/sessions/session_49065/session.json
+16:39:16 | DEBUG    | Is fetched: True
+16:39:16 | DEBUG    | Schema available in /home/gentroyal/eos/dest/eos7jlv/api_schema.json
+16:39:16 | DEBUG    | Setting BentoML AutoService for eos7jlv
+16:39:16 | INFO     | Service class provided
+16:39:16 | DEBUG    | Pack method is: fastapi
+16:39:17 | DEBUG    | Pack method is: fastapi
+16:39:17 | INFO     | Done with initialization!
+16:39:17 | INFO     | Starting runner
+16:39:17 | DEBUG    | Trying standard API
+16:39:17 | INFO     | You are running the app with a standard runner. Beware that this runner does not do as many checks on the input as the conventional runner: use it at your own risk.
+16:39:17 | DEBUG    | Standard API processor started at http://0.0.0.0:58569
+16:39:17 | DEBUG    | This is the input type: ['Compound']
+16:39:18 | DEBUG    | Determining header from predefined example output file: model/framework/examples/run_output.csv
+16:39:18 | DEBUG    | This is the expected header (max 10): ['key', 'input', 'smiles_00', 'smiles_01', 'smiles_02', 'smiles_03', 'smiles_04', 'smiles_05', 'smiles_06', 'smiles_07']
+16:39:18 | DEBUG    | It seems amenable for standard run
+16:39:18 | DEBUG    | Starting standard runner
+16:39:18 | DEBUG    | Three columns found in input
+/home/gentroyal/eos/dest/eos7jlv/example_standard_output.csv
+
+16:39:46 | DEBUG    | File /home/gentroyal/eos/dest/eos7jlv/example_standard_output.csv created successfully!
+16:39:46 | DEBUG    | This is the output (maximum 5 rows, 10 columns)
+16:39:46 | DEBUG    | key                         | input                                    | smiles_00                         | smiles_01                              | smiles_02                      | smiles_03                          | smiles_04                          | smiles_05                     | smiles_06                        | smiles_07                                    
+16:39:46 | DEBUG    | NUZWLKWWNNJHPT-UHFFFAOYSA-N | Oc1cccc2Cc3cccc(O)c3C(=O)c12             | CC(C)C1CC(=O)c2c1cccc2O           | C[NH+]=C1N(Cc2cccc(O)c12)C(C)(C)C      | CC#CC1=Cc2c(O)cccc2CC(C)C1     | Oc1cccc2CCCOc12                    | Oc1cccc2c1CC1CC(C=C1)=CC2=O        | O=C1Cc2ccsc(=O)c2C1=O         | CC(C)(C)C1CC2C(=O)Cc3cccc(C1)c23 | ON=C1CC2OC(=O)C2C=C1                         
+16:39:46 | DEBUG    | RFAXLXKIAKIUDT-UHFFFAOYSA-N | Oc1ccc2ccccc2c1SSc1c(O)ccc2ccccc12       | Oc1sccc2cccc12                    | Oc1cnc(O)c2ccccc12                     | Oc1c(F)ccc2ccccc12             | CCc1cc2cccc2c(O)s1                 | Cc1scc2ccccc12                     | Oc1cc2ccccc2c(O)c1O           | O=c1sccc2ccccc12                 | Cn1cc(O)c2cccc2c1                            
+16:39:46 | DEBUG    | SGRYPYWGNKJSDL-UHFFFAOYSA-N | CC(C)c1ccc2oc3nc(N)c(cc3c(=O)c2c1)C(O)=O | CC(C)c1ccc2c(ccc(C)c2c1)C([O-])=O | CC(C)c1oc(C[NH3+])c2c(cccc12)C([O-])=O | Cc1occ2oc3ccc(cc3c12)C([O-])=O | CC(C)c1nc(cc2c(Cl)cccc12)C([O-])=O | Cc1c(C([O-])=O)c(N)oc1-c1cccc(N)n1 | CC=CC(=O)c1cc(N)cc(=[NH2+])o1 | C[NH2+]Cc1ccc(N)c(c1)C([O-])=O   | CCC([NH3+])CCc1cc(C([O-])=O)c(=[NH2+])oc1[O-]
+16:39:46 | DEBUG    | Removing log file: /home/gentroyal/eos/dest/eos7jlv/standard_run.log
+16:39:46 | DEBUG    | Writing model source to file
+
+Collecting requests==2.31.0
+  Downloading requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting charset-normalizer<4,>=2 (from requests==2.31.0)
+  Downloading charset_normalizer-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+Requirement already satisfied: idna<4,>=2.5 in /home/gentroyal/anaconda3/envs/eos7jlv/lib/python3.10/site-packages (from requests==2.31.0) (3.10)
+Collecting urllib3<3,>=1.21.1 (from requests==2.31.0)
+  Using cached urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting certifi>=2017.4.17 (from requests==2.31.0)
+  Using cached certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+Using cached certifi-2025.1.31-py3-none-any.whl (166 kB)
+Downloading charset_normalizer-3.4.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (146 kB)
+Using cached urllib3-2.3.0-py3-none-any.whl (128 kB)
+Installing collected packages: urllib3, charset-normalizer, certifi, requests
+Successfully installed certifi-2025.1.31 charset-normalizer-3.4.1 requests-2.31.0 urllib3-2.3.0
+Collecting beautifulsoup4==4.12.2
+  Downloading beautifulsoup4-4.12.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting soupsieve>1.2 (from beautifulsoup4==4.12.2)
+  Using cached soupsieve-2.6-py3-none-any.whl.metadata (4.6 kB)
+Downloading beautifulsoup4-4.12.2-py3-none-any.whl (142 kB)
+Using cached soupsieve-2.6-py3-none-any.whl (36 kB)
+Installing collected packages: soupsieve, beautifulsoup4
+Successfully installed beautifulsoup4-4.12.2 soupsieve-2.6
+run_output.csv
+Path existed
+🚀 Serving model eos7jlv: gdbmedchem-similarity
+
+   URL: http://0.0.0.0:58569
+   PID: 49153
+   SRV: conda
+   Output source: local-only
+
+👉 To run model:
+   - run
+
+💁 Information:
+   - info
+⛔ Model eos7jlv closed
+👍 Model eos7jlv fetched successfully!

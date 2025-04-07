@@ -1,4 +1,4 @@
 smiles
-NCCO.CCCCCCCC\C=C/CCCCCCCC(O)=O
-CN([C@H](CN1CCCC1)c1ccccc1)C(=O)Cc1ccccc1
-ONC(=O)c1ccc2[nH]c(=O)c(CCCc3ccccc3)nc2c1
+CN(C)S(=O)(=O)c1ccc2Sc3ccccc3\C(=C\CCN3CCN(C)CC3)c2c1
+FC(F)C(F)(F)COc1cccc(CNCCc2c[nH]c3cc(F)ccc23)c1
+N[C@H](C(O)=O)c1ccc(C(O)=O)c(O)c1
