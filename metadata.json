@@ -4,21 +4,18 @@
     "Status": "Ready",
     "Title": "GDBMedChem similarity search",
     "Description": "The model looks for 100 nearest neighbors of a given molecule, according to ECFP4 Tanimoto similarity, in the GDBMedChem database. GDBMedChem is a 10M molecule-sampling from GDB17, a database containing all the enumerated molecules of up to 17 atoms heavy atoms (166.4B molecules). GDBMedChem compounds have reduced complexity and better synthetic accessibility than GDB17 but retain high sp3 carbon fraction and natural product likeness, providing a database of diverse molecules for drug design. The whole GDBMedChem database is not downloaded with the model, by using it you post queries to an online server external to Ersilia.\n",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Online",
     "Source Type": "External",
+    "Task": "Sampling",
+    "Subtask": "Similarity search",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
     "Input Dimension": 1,
-    "Task": "Sampling",
-    "Subtask": "Similarity search",
-    "Biomedical Area": [
-        "Any"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
+    "Input Shape": "Single",
     "Output": [
         "Compound"
     ],
@@ -29,20 +26,23 @@
         "Similarity",
         "ChEMBL"
     ],
-    "Publication": "https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.201900031",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2019,
+    "Publication": "https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.201900031",
     "Source Code": "https://gdb-medchem-simsearch.gdb.tools/",
     "License": "None",
     "Contributor": "Amna-28",
     "Incorporation Date": "2022-08-18",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7jlv.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7jlv",
     "Docker Architecture": [
         "AMD64",
         "ARM64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7jlv.zip",
-    "Deployment": [
-        "Local"
     ]
 }
