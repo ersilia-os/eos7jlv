@@ -4,6 +4,7 @@ The model looks for 100 nearest neighbors of a given molecule, according to ECFP
 
 This model was incorporated on 2022-08-18.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos7jlv`
@@ -13,7 +14,7 @@ This model was incorporated on 2022-08-18.
 - **Task:** `Sampling`
 - **Subtask:** `Similarity search`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Similarity`, `ChEMBL`
 
 ### Input
