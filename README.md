@@ -2,8 +2,7 @@
 
 The model looks for 100 nearest neighbors of a given molecule, according to ECFP4 Tanimoto similarity, in the GDBMedChem database. GDBMedChem is a 10M molecule-sampling from GDB17, a database containing all the enumerated molecules of up to 17 atoms heavy atoms (166.4B molecules). GDBMedChem compounds have reduced complexity and better synthetic accessibility than GDB17 but retain high sp3 carbon fraction and natural product likeness, providing a database of diverse molecules for drug design. The whole GDBMedChem database is not downloaded with the model, by using it you post queries to an online server external to Ersilia.
 
-This model was incorporated on 2022-08-18.
-
+This model was incorporated on 2022-08-18.Last packaged on 2025-10-22.
 
 ## Information
 ### Identifiers
@@ -51,11 +50,11 @@ _10 of 100 columns are shown_
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `329`
-- **Image Size (Mb):** `222.26`
+- **Image Size (Mb):** `290.51`
 
 **Computational Performance (seconds):**
-- 10 inputs: `42.74`
-- 100 inputs: `1015.96`
+- 10 inputs: `34.03`
+- 100 inputs: `524.42`
 - 10000 inputs: `-1`
 
 ### References
