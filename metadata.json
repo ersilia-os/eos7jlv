@@ -3,7 +3,7 @@
     "Slug": "gdbmedchem-similarity",
     "Status": "In maintenance",
     "Title": "GDBMedChem similarity search",
-    "Description": "Using ECFP4 Tanimoto similarity, this model identifies the 100 nearest neighbors of a molecule in GDBMedChem—a 10M molecule subset sampled from GDB17 (which contains 166.4B molecules up to 17 heavy atoms). GDBMedChem offers lower complexity and better synthetic accessibility than GDB17, while retaining a high fraction of sp3 carbons and natural product likeness for diverse drug design. The full database is not downloaded locally; instead, queries are sent to an external online server.",
+    "Description": "Using ECFP4 Tanimoto similarity, this model identifies the 100 nearest neighbors of a molecule in GDBMedChem\u2014a 10M molecule subset sampled from GDB17 (which contains 166.4B molecules up to 17 heavy atoms). GDBMedChem offers lower complexity and better synthetic accessibility than GDB17, while retaining a high fraction of sp3 carbons and natural product likeness for diverse drug design. The full database is not downloaded locally; instead, queries are sent to an external online server.",
     "Deployment": [
         "Local"
     ],
