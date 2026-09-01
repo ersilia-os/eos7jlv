@@ -28,16 +28,16 @@ This model was incorporated on 2022-08-18.Last packaged on 2026-07-06.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| smiles_00 | string |  | Sampled smiles 0 from a similarity search in GDBMedChem |
-| smiles_01 | string |  | Sampled smiles 1 from a similarity search in GDBMedChem |
-| smiles_02 | string |  | Sampled smiles 2 from a similarity search in GDBMedChem |
-| smiles_03 | string |  | Sampled smiles 3 from a similarity search in GDBMedChem |
-| smiles_04 | string |  | Sampled smiles 4 from a similarity search in GDBMedChem |
-| smiles_05 | string |  | Sampled smiles 5 from a similarity search in GDBMedChem |
-| smiles_06 | string |  | Sampled smiles 6 from a similarity search in GDBMedChem |
-| smiles_07 | string |  | Sampled smiles 7 from a similarity search in GDBMedChem |
-| smiles_08 | string |  | Sampled smiles 8 from a similarity search in GDBMedChem |
-| smiles_09 | string |  | Sampled smiles 9 from a similarity search in GDBMedChem |
+| smi_00 | string |  | Sampled smiles 0 from a similarity search in GDBMedChem |
+| smi_01 | string |  | Sampled smiles 1 from a similarity search in GDBMedChem |
+| smi_02 | string |  | Sampled smiles 2 from a similarity search in GDBMedChem |
+| smi_03 | string |  | Sampled smiles 3 from a similarity search in GDBMedChem |
+| smi_04 | string |  | Sampled smiles 4 from a similarity search in GDBMedChem |
+| smi_05 | string |  | Sampled smiles 5 from a similarity search in GDBMedChem |
+| smi_06 | string |  | Sampled smiles 6 from a similarity search in GDBMedChem |
+| smi_07 | string |  | Sampled smiles 7 from a similarity search in GDBMedChem |
+| smi_08 | string |  | Sampled smiles 8 from a similarity search in GDBMedChem |
+| smi_09 | string |  | Sampled smiles 9 from a similarity search in GDBMedChem |
 
 _10 of 100 columns are shown_
 ### Source and Deployment
