@@ -1,6 +1,6 @@
 # GDBMedChem similarity search
 
-Using ECFP4 Tanimoto similarity, this model identifies the 100 nearest neighbors of a molecule in GDBMedChem—a 10M molecule subset sampled from GDB17 (which contains 166.4B molecules up to 17 heavy atoms). GDBMedChem offers lower complexity and better synthetic accessibility than GDB17, while retaining a high fraction of sp3 carbons and natural product likeness for diverse drug design. The full database is not downloaded locally; instead, queries are sent to an external online server.
+Returns the 100 nearest neighbours of a query from GDBMedChem, a ten-million-molecule collection distilled from the 166 billion structures of GDB17 by removing problematic functional groups and overly complex scaffolds. Awale and colleagues sampled the remainder evenly across size, stereochemistry and polarity, producing a set with better synthetic accessibility than GDB17 while retaining higher sp3 character and natural product likeness than typical drugs. Neighbours are enumerated rather than catalogued compounds.
 
 This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** List of 100 nearest neighbors
+- **Interpretation:** List of the 100 nearest neighbours to the query molecule in the GDBMedChem library.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
