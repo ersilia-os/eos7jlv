@@ -1,6 +1,6 @@
 # GDBMedChem similarity search
 
-Returns the 100 nearest neighbours of a query from GDBMedChem, a ten-million-molecule collection distilled from the 166 billion structures of GDB17 by removing problematic functional groups and overly complex scaffolds. Awale and colleagues sampled the remainder evenly across size, stereochemistry and polarity, producing a set with better synthetic accessibility than GDB17 while retaining higher sp3 character and natural product likeness than typical drugs. Neighbours are enumerated rather than catalogued compounds.
+Returns the 100 closest neighbours of a query in GDBMedChem, ten million molecules distilled from the 166.4 billion structures of GDB17 by stripping problematic functional groups and overly complex scaffolds, then sampling evenly across size, stereochemistry and polarity. Awale and colleagues report lower complexity and better synthetic accessibility than GDB17 while keeping a higher sp3 fraction and natural product likeness than known drugs. Neighbours are ranked by ECFP4 similarity using approximate search on the authors' public server, and are enumerated rather than purchasable compounds.
 
 This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2022-08-18.Last packaged on 2026-09-01.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** List of the 100 nearest neighbours to the query molecule in the GDBMedChem library.
+- **Interpretation:** 100 nearest neighbours in the ten-million-molecule GDBMedChem library, ranked by ECFP4 similarity.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
