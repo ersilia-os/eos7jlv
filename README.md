@@ -2,7 +2,8 @@
 
 Returns the 100 closest neighbours of a query in GDBMedChem, ten million molecules distilled from the 166.4 billion structures of GDB17 by stripping problematic functional groups and overly complex scaffolds, then sampling evenly across size, stereochemistry and polarity. Awale and colleagues report lower complexity and better synthetic accessibility than GDB17 while keeping a higher sp3 fraction and natural product likeness than known drugs. Neighbours are ranked by ECFP4 similarity using approximate search on the authors public server, and are enumerated rather than purchasable compounds.
 
-This model was incorporated on 2022-08-18.Last packaged on 2026-10-15.
+This model was incorporated on 2022-08-18.
+Last packaged on 2026-10-15.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 100 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7jlv](https://hub.docker.com/r/ersiliaos/eos7jlv)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7jlv.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7jlv.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos7jlv_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos7jlv_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
